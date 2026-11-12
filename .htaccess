@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?ubiquityunifikenya\.co\.ke(?::[0-9]+)?$ [NC]
+    RewriteCond %{HTTPS} !=on [OR]
+    RewriteCond %{HTTP_HOST} ^www\.ubiquityunifikenya\.co\.ke(?::[0-9]+)?$ [NC]
+    RewriteRule ^ https://ubiquityunifikenya.co.ke%{REQUEST_URI} [R=301,L,NE]
+
+    # Block direct access to Laravel application files when this directory is
+    # used as the web root on shared hosting.
+    RewriteRule ^(\.env|artisan|composer\.(json|lock)|package(-lock)?\.json|phpunit\.xml|vite\.config\.js|vendor\.zip|README\.md)$ - [F,L,NC]
+    RewriteRule ^(app|bootstrap|config|database|node_modules|resources|routes|storage|tests|vendor)(/|$) - [F,L,NC]
+
+    # Serve the Laravel public directory without requiring /public in the URL.
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

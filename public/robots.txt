@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /admin
+Disallow: /cart
+Disallow: /checkout
+Disallow: /login.php
+Disallow: /register
+Disallow: /vendor
+Allow: /assets/
+Allow: /build/
+Allow: /uploads/
+
+Sitemap: https://ubiquityunifikenya.co.ke/sitemap.xml

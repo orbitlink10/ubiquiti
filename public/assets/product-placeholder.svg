@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-labelledby="title desc">
+  <title id="title">MikroTik Kenya product image placeholder</title>
+  <desc id="desc">A simple network device illustration used when a product image is unavailable.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#eff6ff"/>
+    </linearGradient>
+    <linearGradient id="device" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="360" fill="url(#bg)"/>
+  <circle cx="100" cy="82" r="56" fill="#dbeafe" opacity=".75"/>
+  <circle cx="392" cy="284" r="68" fill="#fee2e2" opacity=".8"/>
+  <g fill="none" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round">
+    <path d="M128 122h224"/>
+    <path d="M158 240h164"/>
+    <path d="M240 122v118"/>
+  </g>
+  <rect x="112" y="112" width="256" height="132" rx="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="3"/>
+  <rect x="138" y="142" width="204" height="54" rx="12" fill="url(#device)"/>
+  <g fill="#ffffff">
+    <rect x="156" y="158" width="26" height="16" rx="3"/>
+    <rect x="194" y="158" width="26" height="16" rx="3"/>
+    <rect x="232" y="158" width="26" height="16" rx="3"/>
+    <rect x="270" y="158" width="26" height="16" rx="3"/>
+    <circle cx="318" cy="166" r="5"/>
+  </g>
+  <g stroke="#0f172a" stroke-width="5" stroke-linecap="round">
+    <path d="M166 112V82"/>
+    <path d="M314 112V82"/>
+  </g>
+  <text x="240" y="284" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#0f172a">MikroTik Kenya</text>
+  <text x="240" y="314" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#64748b">Image coming soon</text>
+</svg>
